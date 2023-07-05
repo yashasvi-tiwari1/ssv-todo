@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.app-body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(blue,blueviolet);
+}
+.container {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 380px;
+}
+
+.items-body {
+  height: 320px;
+  /*border: 0.5px solid black;*/
+  margin-top: 20px;
+  overflow: auto;
+}
+.input-col {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 12px;
+  border-radius: 7px;
+  border: 0.5px solid lightgrey;
+  font-size: 16px;
+}
+
+.add {
+  width: 45px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 35px;
+
+  /*border: 0.5px solid lightgrey;*/
+}
+
+.clearall {
+  color: white;
+  margin-top: 10px;
+  background-color: blueviolet;
+  padding: 8px;
+  border-radius: 7px;
+  float: right;
+}
+.todo-item {
+  background-color: cornflowerblue;
+  display: flex;
+  margin-top: 10px;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+}
+.todo-item:hover button {
+  opacity: 1;
+}
+.items {
+  width: 100%;
+  height: 45px;
+  padding: 12px;
+  border-radius: 6px;
+  border-style: none;
+  background-color: #f3f2f2;
+  font-size: 15px;
+}
+.update-btn {
+  border-style: none;
+  color: white;
+  background-color: blueviolet;
+  padding: 6px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-right: 52px;
+}
+.delete-btn {
+  border-style: none;
+  padding: 6px;
+  color: white;
+  background-color: blueviolet;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
